@@ -1,3 +1,5 @@
+from dicitonary import Mammals
+
 clues = ['they move in herds', 'it can smell water from miles away',
          'they have very good memory']
 question = 'Guess the mammal:  '
