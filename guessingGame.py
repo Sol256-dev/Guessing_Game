@@ -8,6 +8,9 @@ numb = 1
 correctAns = 'elephant'
 i = 0
 
+# testing connection
+print(key_sel())
+
 # iterate through the clues. the number of clues determines the chances you have to guess the correct answer
 while answer != correctAns and numb <= 3:
     # print the first clue
