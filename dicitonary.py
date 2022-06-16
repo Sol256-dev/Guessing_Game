@@ -1,5 +1,4 @@
 import random
-
 class Mammals:
 
     def key_sel():
