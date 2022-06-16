@@ -5,11 +5,8 @@ clues = ['they move in herds', 'it can smell water from miles away',
 question = 'Guess the mammal:  '
 answer = ''
 numb = 1
-correctAns = 'elephant'
+correctAns = key_sel()
 i = 0
-
-# testing connection
-print(key_sel())
 
 # iterate through the clues. the number of clues determines the chances you have to guess the correct answer
 while answer != correctAns and numb <= 3:

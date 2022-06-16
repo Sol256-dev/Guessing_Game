@@ -1,25 +1,27 @@
+import random
+
 class Mammals:
 
     def key_sel():
 
         mamm = {
-                    'elephant': [' a) they move in herds\n', ' b) it can smell water from miles away\n',
-                                ' c) they have very good memory\n\n'],
-                    'dog': [' a) in the wild, live in packs', ' b) very good sense of smell',
-                            ' c) used for hunting'],
-                    'bats': [' a) cannot see', ' b) very active at night',
-                            ' c) often mistaken to be vampires']
-                }
+            'elephant': [' a) they move in herds\n', ' b) it can smell water from miles away\n',
+                         ' c) they have very good memory\n\n'],
+            'dog': [' a) in the wild, live in packs\n', ' b) very good sense of smell\n',
+                    ' c) used for hunting\n\n'],
+            'bat': [' a) cannot see\n', ' b) very active at night\n',
+                     ' c) often mistaken to be vampires\n\n'],
+            'human': [' a) warm blooded\n', ' b) can program\n',
+                      ' c) loves socializing\n\n']
+        }
 
-        k = []
-        m = (mamm.items())
+        count = 0
 
-        k.append(m)
+        while count < len(mamm):
+            k = random.choice(list(mamm))
+           
+            count += 1
 
+            return k
 
-        print(k)
-        
-        # for i in range(3):
-        #     print(mamm[i])
-
-    key_sel()
+    print(key_sel())
