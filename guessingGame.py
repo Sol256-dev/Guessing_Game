@@ -1,36 +1,15 @@
 from dicitonary import Mammals
 
-clues = ['they move in herds', 'it can smell water from miles away',
-         'they have very good memory']
-question = 'Guess the mammal:  '
-answer = ''
-numb = 1
-correctAns = key_sel()
-i = 0
+correctAns = Mammals()
+# destructuring 
+clues, mammal = correctAns.key_sel()
 
-# iterate through the clues. the number of clues determines the chances you have to guess the correct answer
-while answer != correctAns and numb <= 3:
-    # print the first clue
-    print('Clue #' + str(numb) + ' ' + clues[i])
+print(clues)
 
-    # ask the question and get the answer as well
-    answer = input(question)
+n = input('Enter mammal: ')
 
-    # check if the answer is correct
-    if answer.lower().strip() == correctAns:
-        print('win!!!')
-
-        break
-
-    # no chances left
-    else:
-        print('Wrong !!!')
-        
-        # no more chances left
-        if numb == 3:
-            print('You lose')
-
-    numb += 1
-    i += 1
-    print('line 33 here')
+if n.lower() == mammal:
+    print('Correct!!')
+else:
+    print('wrong')
     
