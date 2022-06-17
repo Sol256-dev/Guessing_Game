@@ -8,6 +8,8 @@ print(clues)
 
 n = input('Enter mammal: ')
 
+breakpoint()
+
 if n.lower() == mammal:
     print('Correct!!')
 else:
