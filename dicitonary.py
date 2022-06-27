@@ -24,7 +24,3 @@ class Mammals:
             count += 1
 
             return '\n'.join(m), k
-
-            # return m
-
-    # print(key_sel())
